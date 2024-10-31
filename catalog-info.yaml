@@ -1,0 +1,41 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "parasol-insurance-app"
+  description: "Parasol Insurance Application"
+  annotations:
+    argocd/app-selector: rht-gitops.com/janus-argocd=parasol-insurance-app-bootstrap
+    backstage.io/kubernetes-id: parasol-insurance-app
+    janus-idp.io/tekton: parasol-insurance-app
+    backstage.io/source-location: url:https://gitlab-gitlab.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/development/parasol-insurance-app
+    backstage.io/techdocs-ref: url:https://gitlab-gitlab.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/development/parasol-insurance-app
+    gitlab.com/project-slug: development/parasol-insurance-app
+    quay.io/repository-slug: "quayadmin/parasol-insurance-app"
+  tags:
+    - java
+    - quarkus
+  links:
+    - url: https://devspaces.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/#https://gitlab-gitlab.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/development/parasol-insurance-app
+      title: OpenShift Dev Spaces (VS Code)
+      icon: web
+    - url: https://devspaces.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/#https://gitlab-gitlab.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/development/parasol-insurance-app?che-editor=che-incubator/che-idea/latest
+      title: OpenShift Dev Spaces (JetBrains IntelliJ)
+      icon: web
+spec:
+  type: service
+  lifecycle: production
+  owner: "user1"
+  providesApis:
+    - "parasol-insurance-app"
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: "parasol-insurance-app"
+  description: "Parasol Insurance Application"
+spec:
+  type: openapi
+  lifecycle: production
+  owner: "user1"
+  definition:
+    $text: ./openapi.yaml
