@@ -9,7 +9,7 @@ metadata:
     janus-idp.io/tekton: parasol-insurance-app
     #backstage.io/source-location: url:https://gitlab-gitlab.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/development/parasol-insurance-app
     backstage.io/source-location: url:https://github.com/shpaz/parasol-insurance/tree/main
-    backstage.io/techdocs-ref: url:https://gitlab-gitlab.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/development/parasol-insurance-app
+    #backstage.io/techdocs-ref: url:https://gitlab-gitlab.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/development/parasol-insurance-app
     gitlab.com/project-slug: development/parasol-insurance-app
     quay.io/repository-slug: "quayadmin/parasol-insurance-app"
   tags:
@@ -19,8 +19,8 @@ metadata:
     - url: https://ic-app-user1.apps.cluster-d4vg6.d4vg6.sandbox2812.opentlc.com/ClaimsList
       title: Application URL
       icon: web
-    - url: https://devspaces.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/#https://gitlab-gitlab.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/development/parasol-insurance-app?che-editor=che-incubator/che-idea/latest
-      title: OpenShift Dev Spaces (JetBrains IntelliJ)
+    - url: https://devspaces.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/#https://gitlab-gitlab.apps.cluster-j2gsb.j2gsb.sandbox2537.opentlc.com/development/parasol-insurance-app
+      title: OpenShift Dev Spaces
       icon: web
 spec:
   type: service
